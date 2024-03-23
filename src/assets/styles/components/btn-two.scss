@@ -1,0 +1,29 @@
+.Btn-two{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 12px;
+  background: #f3f3f3;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  .icon{
+    background: black;
+    width: 20px;
+    height: 20px;
+  }
+
+  p{
+    font-family: 'OpenSans-Regular';
+  }
+
+  &.bg-purple{
+    background: #4900ff;
+    color: #e0e0e0;
+
+    .icon{
+      background: #e0e0e0;
+    }
+  }
+}

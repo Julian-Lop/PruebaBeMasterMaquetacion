@@ -1,0 +1,96 @@
+.HomePage{
+  width: 100%;
+  height: 100%;
+}
+
+.HeaderPage{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeaderLeft{
+  display: flex;
+  gap: 20px;
+
+  span{
+    display: flex;
+    align-items: center;
+    font-family: 'OpenSans-Regular';
+    font-size: 14px;
+    gap: 6px;
+    cursor: pointer;
+    
+    .icon{
+      width: 15px;
+      height: 15px;
+      background: black;
+    }
+
+    &.active{
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        height: 2.5px;
+        background: #4900ff;
+      }
+      color: #4900ff;
+
+      .icon{
+        background: #4900ff;
+      }
+      
+    }
+  }
+
+  h2{
+    font-family: 'OpenSans-Regular' !important;
+    font-weight: 100;
+  }
+}
+
+.HeaderRight{
+  display: flex;
+  gap: 20px;
+}
+
+.Search{
+  position: relative;
+  width: 40%;
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid #e0e0e0;
+  margin-top: 40px;
+
+  .icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 10px;
+    background: #e0e0e0;
+  }
+
+  input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 50px;
+    font-family: 'OpenSans-Regular';
+    font-size: 16px;
+  }
+
+  &::before{
+    position: absolute;
+    content: '';
+    left: 40px;
+    top: 7px;
+    width: 2px;
+    height: 30px;
+    background: #e0e0e0;
+  }
+}

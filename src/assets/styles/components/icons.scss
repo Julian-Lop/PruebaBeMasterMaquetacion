@@ -1,0 +1,73 @@
+.icon{
+  content: '';
+  background: #FFF;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+// ? SVG one color
+// {
+//     -webkit-mask-image: url('../../../public/svg/.svg');
+//     mask-image: url('../../../public/svg/.svg') 
+// }
+
+// ? SVG with original colors
+// {
+//     background-color: transparent;
+//     background-image: url('../../../public/svg/.svg');
+// }
+
+
+.icon-trash{
+    -webkit-mask-image: url('/svg/trash-alt-regular.svg');
+    mask-image: url('/svg/trash-alt-regular.svg') 
+}
+
+.icon-play{
+  -webkit-mask-image: url('/svg/play-circle-regular.svg');
+  mask-image: url('/svg/play-circle-regular.svg') 
+}
+
+.icon-folder{
+  -webkit-mask-image: url('/svg/folder-regular.svg');
+  mask-image: url('/svg/folder-regular.svg') 
+}
+
+.icon-search{
+  -webkit-mask-image: url('/svg/search-solid.svg');
+  mask-image: url('/svg/search-solid.svg') 
+}
+
+.icon-book{
+  -webkit-mask-image: url('/svg/book-solid.svg');
+  mask-image: url('/svg/book-solid.svg') 
+}
+
+.icon-columns{
+  -webkit-mask-image: url('/svg/columns-solid.svg');
+  mask-image: url('/svg/columns-solid.svg') 
+}
+
+.icon-config{
+  -webkit-mask-image: url('/svg/cog-solid.svg');
+  mask-image: url('/svg/cog-solid.svg') 
+}
+
+.icon-analytics{
+  -webkit-mask-image: url('/svg/chart-bar-regular.svg');
+  mask-image: url('/svg/chart-bar-regular.svg') 
+}
+
+.icon-return{
+  -webkit-mask-image: url('/svg/chevron-left-solid.svg');
+  mask-image: url('/svg/chevron-left-solid.svg') 
+}
