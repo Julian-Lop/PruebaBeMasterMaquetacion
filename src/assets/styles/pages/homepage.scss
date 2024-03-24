@@ -1,6 +1,10 @@
 .HomePage{
   width: 100%;
   height: 100%;
+
+  @include mobile{
+    overflow: hidden;
+  }
 }
 
 .HeaderPage{
@@ -8,6 +12,11 @@
   height: max-content;
   display: flex;
   justify-content: space-between;
+
+  @include mobile{
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 }
 
 .HeaderLeft{
@@ -37,6 +46,10 @@
         width: 100%;
         height: 2.5px;
         background: #4900ff;
+
+        @include mobile{
+          bottom: -6px;
+        }
       }
       color: #4900ff;
 
@@ -45,6 +58,8 @@
       }
       
     }
+
+    
   }
 
   h2{
@@ -56,6 +71,15 @@
 .HeaderRight{
   display: flex;
   gap: 20px;
+
+  @include mobile{
+    margin-left: -5px;
+  }
+}
+
+.Content{
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .Search{
@@ -92,5 +116,9 @@
     width: 2px;
     height: 30px;
     background: #e0e0e0;
+  }
+
+  @include mobile{
+    width: 100%;
   }
 }

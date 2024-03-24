@@ -1,8 +1,11 @@
 import React from 'react'
 
-export const Sidebar = () => {
+export const Sidebar = ({ sx, show }) => {
+
   return (
-    <aside className='Sidebar'>
+    <aside className='Sidebar' style={sx} >
+      <i className='icon icon-return float-return' onClick={() => show(false)} /> 
+
       <div className='LogoContainer'>
         <img src="/images/logo.jpg" alt="" />
       </div>

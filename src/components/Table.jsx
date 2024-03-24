@@ -10,7 +10,7 @@ export const Table = ({ titles, list, icon }) => {
       <thead>
         <tr>
           {titles.map((title, i) => (
-            <th key={i+'title'}> {i == 0 && <input type="checkbox" />} {title} </th>
+            <th key={i+'title'}> <div>{i == 0 && <input type="checkbox" />} {title}</div> </th>
           ))}
         </tr>
       </thead>

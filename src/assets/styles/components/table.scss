@@ -4,7 +4,6 @@
   height: max-content;
   border-spacing: 0;
 
-
   tr{
     
     &:hover{
@@ -15,19 +14,25 @@
   }
 
   th:first-of-type{
-    padding-left: 15px;
-    width: 60%;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 15px;
 
-    input{
-      width: 15px;
-      height: 15px;
+    div{
+      padding-left: 15px;
+      width: 60%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  
+      input{
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 
+  th{
+    border-bottom: 1.5px solid #e8e8e8;
+  }
 
   thead,td{
     font-family: 'OpenSans-SemiBold';
@@ -42,6 +47,10 @@
     font-size: 14px;
     cursor: pointer;
     text-align: center;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 
     div{
       display: flex;
@@ -58,5 +67,9 @@
         background: #4900ff;
       }
     }
+  }
+
+  @include mobile{
+    min-width: 600px;
   }
 }

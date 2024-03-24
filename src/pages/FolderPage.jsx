@@ -15,7 +15,7 @@ export const FolderPage = () => {
   const { folder } = useParams()
 
   return (
-    <div>
+    <div className='HomePage'>
       <HeaderPage isHome={false} msm={folder} />
 
       <div className='Content'>
